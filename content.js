@@ -3,8 +3,6 @@ chrome.storage.sync.get('selectors', (data) => {
       'button[aria-label="reject"]',
       'button[data-testid="reject"]',
       'button[class*="reject"]'
-
-      // Add selectors as needed
     ];
   
     function clickButton(selector) {
