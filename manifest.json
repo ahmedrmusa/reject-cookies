@@ -3,7 +3,7 @@
     "name": "Reject Cookies",
     "version": "1.0",
     "description": "Automatically reject all cookie popups.",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["activeTab", "storage", "scripting"],
     "background": {
       "service_worker": "background.js"
     },
@@ -13,6 +13,14 @@
         "js": ["content.js"],
         "run_at": "document_end"
       }
-    ]
+    ],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+      }
+    }
   }
   
