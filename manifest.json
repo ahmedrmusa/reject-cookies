@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Reject Cookies",
+    "version": "1.0",
+    "description": "Automatically reject all cookie popups.",
+    "permissions": ["activeTab", "scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "run_at": "document_end"
+      }
+    ]
+  }
+  
